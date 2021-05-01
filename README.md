@@ -7,16 +7,16 @@ Well, DNA is really just a sequence of molecules called nucleotides, arranged in
 
 One place where DNA tends to have high genetic diversity is in Short Tandem Repeats (STRs). An STR is a short sequence of DNA bases that tends to repeat consecutively numerous times at specific locations inside of a person’s DNA. The number of times any particular STR repeats varies a lot among individuals. In the DNA samples below, for example, Alice has the STR `AGAT` repeated four times in her DNA, while Bob has the same STR repeated five times.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/895381cc-f474-4c2e-8090-fe74c2663e56/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/895381cc-f474-4c2e-8090-fe74c2663e56/Untitled.png)
+![iMAGE](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/895381cc-f474-4c2e-8090-fe74c2663e56/Untitled.png)
 
 Using multiple STRs, rather than just one, can improve the accuracy of DNA profiling. If the probability that two people have the same number of repeats for a single STR is 5%, and the analyst looks at 10 different STRs, then the probability that two DNA samples match purely by chance is about 1 in 1 quadrillion (assuming all STRs are independent of each other). So if two DNA samples match in the number of repeats for each of the STRs, the analyst can be pretty confident they came from the same person. CODIS, The FBI’s [DNA database](https://www.fbi.gov/services/laboratory/biometric-analysis/codis/codis-and-ndis-fact-sheet), uses 20 different STRs as part of its DNA profiling process.
 
 What might such a DNA database look like? Well, in its simplest form, you could imagine formatting a DNA database as a CSV file, wherein each row corresponds to an individual, and each column corresponds to a particular STR.
 
-`name,AGAT,AATG,TATC
-Alice,28,42,14
-Bob,17,22,19
-Charlie,36,18,25`
+`name,AGAT,AATG,TATC<br />
+Alice,28,42,14<br />
+Bob,17,22,19<br />
+Charlie,36,18,25`<br />
 
 The data in the above file would suggest that Alice has the sequence `AGAT` repeated 28 times consecutively somewhere in her DNA, the sequence `AATG` repeated 42 times, and `TATC` repeated 14 times. Bob, meanwhile, has those same three STRs repeated 17 times, 22 times, and 19 times, respectively. And Charlie has those same three STRs repeated 36, 18, and 25 times, respectively.
 
